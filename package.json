@@ -13,10 +13,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "glob": "^5.0.14",
     "react": "^0.13.3"
   },
   "browserify": {
-    "transform": ["babelify"]
+    "transform": [
+      "babelify"
+    ]
   },
   "devDependencies": {
     "babelify": "^6.1.3",

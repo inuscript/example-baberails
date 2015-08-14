@@ -3,11 +3,11 @@ var browserify = require('browserify');
 var babelify = require('babelify');
 var source = require('vinyl-source-stream');
 var transform = require('vinyl-transform');
+var glob = require("glob")
 
-var src = ['js/**/*.jsx', 'js/**/*.js']
 gulp.task('browserify', function() {
   return browserify({
-    entries: ['js/entry.js'],
+    entries: glob.sync('./js/entries/*.js'),
     extensions: ['jsx']
   })
   .bundle()
@@ -16,7 +16,7 @@ gulp.task('browserify', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(src, ['browserify'])
+  gulp.watch('js/**/*', ['browserify'])
 });
 
 gulp.task('default', ['browserify', 'watch']);

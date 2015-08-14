@@ -37,13 +37,13 @@ module.exports = exports['default'];
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var _answerAppJsx = require("./answer/App.jsx");
+var _answerAppJsx = require("../answer/App.jsx");
 
 var _answerAppJsx2 = _interopRequireDefault(_answerAppJsx);
 
 var answerDom = document.getElementById("answer-form-container");
 
-},{"./answer/App.jsx":1}],3:[function(require,module,exports){
+},{"../answer/App.jsx":1}],3:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
