@@ -15,6 +15,7 @@ gulp.task('clean', function() {
 gulp.task('browserify-lib', function() {
   browserify()
     .require("react")
+    .require("jquery")
     .bundle()
     .pipe(source("lib.js"))
     .pipe(gulp.dest(dest))

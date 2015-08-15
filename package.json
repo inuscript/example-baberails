@@ -15,7 +15,7 @@
     "react": "^0.13.3"
   },
   "browser": {
-    "jquery": "vender/assets/javascripts/jquery-1.11.3.js"
+    "jquery": "vendor/assets/javascripts/jquery-1.11.3.js"
   },
   "browserify": {
     "transform": [
