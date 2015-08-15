@@ -7,9 +7,11 @@ var transform = require('vinyl-transform');
 var glob = require("glob")
 var del = require("del")
 var dest = './public/javascripts/build'
+
 gulp.task('clean', function() {
   del(dest)
 })
+
 gulp.task('browserify-lib', function() {
   browserify()
     .require("react")

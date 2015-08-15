@@ -1,1 +1,4 @@
-console.log("hoge")
+var $ = require("jquery")
+$(function(){
+  console.log("hoge")
+})
