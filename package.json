@@ -15,12 +15,15 @@
     "react": "^0.13.3"
   },
   "browser": {
-    "jquery": "vendor/assets/javascripts/jquery-1.11.3.js"
+    "jquery": "./vendor/assets/javascripts/jquery-1.11.3.js"
   },
   "browserify": {
     "transform": [
-      "babelify"
+      "browserify-shim"
     ]
+  },
+  "browserify-shim": {
+    "jquery": "jQuery"
   },
   "devDependencies": {
     "babelify": "^6.1.3",

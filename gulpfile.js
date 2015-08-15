@@ -28,6 +28,7 @@ gulp.task('browserify-client', function() {
       entries: path.join(base, file),
       extensions: ['jsx']
     })
+    .transform("babelify") // こっちだけにしたい
     .external("react")
     .external("jquery")
     .bundle()
