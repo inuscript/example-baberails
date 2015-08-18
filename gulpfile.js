@@ -6,10 +6,22 @@ var source = require('vinyl-source-stream');
 var transform = require('vinyl-transform');
 var glob = require("glob")
 var del = require("del")
+var webpack = require("webpack")
+var cnf = require("./webpack.config.js")
 var dest = './public/javascripts/build'
 
 gulp.task('clean', function() {
   del(dest)
+})
+
+gulp.task('webpack', function(done) {
+  webpack(cnf, function(err, stats){
+    if(err) throw new gutil.PluginError("webpack", err);
+    // gutil.log("[webpack]", stats.toString({
+    //   // output options
+    // }));
+    done();
+  })
 })
 
 gulp.task('browserify-lib', function() {

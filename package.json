@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "gulp",
+    "webpack": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
