@@ -27,6 +27,7 @@
     "jquery": "jQuery"
   },
   "devDependencies": {
+    "babel-loader": "^5.3.2",
     "babelify": "^6.1.3",
     "browserify": "^11.0.1",
     "browserify-shim": "^3.8.10",
